@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script src="JS/cb.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Andro World</h1>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <button id="toggleDarkMode"><img id="moonIcon" src="Assets/moon1.png" alt="Moon Icon" height="20px" width="100%"></button>
+        <h2 align="center">Contact Me</h2>
+        <div class="contact-container">
+            <address>
+                <h1>Email:</h1>
+                <p>androlay30@gmail.com</p>
+                <h1>Phone:</h1>
+                <p>0895397323281</p>
+                <h1>Instagram:</h1>
+                <p>@andro.lay</p>
+                <h1>Location:</h1>
+                <p>Manado, Indonesia</p>
+            </address>
+            <form method="POST" action="Contact.php">
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="Name"><br>
+                <label for="Message">Message:</label>
+                <textarea name="Message" id="Message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Andro Lay, Pemrograman Web. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

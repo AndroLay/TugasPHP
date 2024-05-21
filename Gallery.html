@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Gallery.css">
+    <script src="JS/Gallery.js"></script>
+    <title>Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Andro World</h1>
+        <nav>
+            <a href="Index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Blog.html">Blog</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="photo-gallery">
+        <button id="toggleDarkMode" class="control-button"><img id="moonIcon" src="Assets/moon1.png" alt="Moon Icon" height="20px"></button>
+        <h2>Photo Gallery</h2>
+        <div class="controls">
+            <button class="prev control-button" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next control-button" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="photo-container">
+            <img src="Foto/Foto1.jpg" alt="Foto1" height="200px">
+            <img src="Foto/Foto2.jpg" alt="Foto2" height="200px">
+            <img src="Foto/Foto3.jpg" alt="Foto3" height="200px">
+            <img src="Foto/Gambar.jpg" alt="Gambar1" height="200px">
+            <img src="Foto/Gambar1.jpg" alt="Gambar1" height="200px">
+            <img src="Foto/Gambar2.jpg" alt="Gambar2" height="200px">
+            <img src="Foto/Gambar3.jpg" alt="Gambar3" height="200px">
+            <img src="Foto/Gambar4.jpg" alt="Gambar4" height="200px">
+            <img src="Foto/Gambar5.jpg" alt="Gambar5" height="200px">
+            <img src="Foto/Gambar6.jpg" alt="Gambar6" height="200px">
+        </div>
+    </section>    
+    <footer>
+        <p>&copy; 2024 Andro Lay, Pemrograman Web. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

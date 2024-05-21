@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #d4d4d4; /* Warna latar belakang putih */
+}
+
+header {
+    background-color: rgb(154, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 8%;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+section {
+    padding: 30px;
+    animation: fadeInRight 1s ease forwards;
+}
+
+.name-color {
+    color: rgb(154, 0, 0); /* This will make "Andro Lay" red */
+    font-size: 55px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; /* Space between the text and the image */
+    flex-wrap: wrap; /* Ensures content wraps if not enough space */
+}
+
+.profile-header p {
+    margin-top: 8px; /* Adds a little space between the h2 and the paragraph */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.profile-header img {
+    /* Adjust the width or height as needed */
+    height: 400px;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h4 {
+    margin-top: 30px; /* Jarak antara baris yang lebih besar untuk h3 */
+}
+
+p {
+    line-height: 1.5; /* Jarak baris untuk paragraf */
+
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: bottom;
+    bottom: 0;
+    width: 100%;
+    animation: slideIn 0.5s forwards; /* Animasi masuk */
+}
+
+/* Animasi Teks */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animasi masuk */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: hsl(0, 0%, 12%);
+    color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+.moonIcon {
+    background: none; /* Removes background */
+}
+
+.dark-mode .profile-header {
+    background-color: #55555500;
+    box-shadow: 0 2px 4px rgba(31, 31, 31, 0.1);
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
